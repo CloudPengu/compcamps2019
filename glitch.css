@@ -1,0 +1,149 @@
+body{
+
+}
+
+  .small{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+  }
+  .width{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+  }
+  .center {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+  }
+  .full{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .glitch {
+  position: relative;
+  margin: 0 auto;
+  color: #9248E8;
+  font-size: 80px;
+  font-family: "Exo", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  transform: scale3d(1, 1, 1);
+}
+  .glitch::before, .glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  background="images/Vaporwave.jpg";
+  color: #9248E8;
+  clip: rect(0, 900px, 0, 0);
+}
+  .glitch::before {
+  left: 7px;
+  text-shadow: 1px 0 green;
+  animation: glitch-effect 3s infinite linear alternate-reverse;
+}
+  .glitch::after {
+  left: 3px;
+  text-shadow: -1px 0 red;
+  animation: glitch-effect 2s infinite linear alternate-reverse;
+}
+  .nav-item{
+     display: inline;
+     padding: 10px;
+     font-size: 20px
+   }
+
+   .nav-link{
+     text-decoration: none;
+     color: #9248E8;
+   }
+
+   .nav{
+     margin: 0px 0px 0px 0px;
+     padding: 0px;
+     background-color: #9E0007;
+   }
+
+   .nav-container{
+     margin: 0px;
+     padding: 0px;
+   }
+
+@keyframes glitch-effect {
+  0% {
+    clip: rect(16px, 9999px, 41px, 0);
+  }
+  5% {
+    clip: rect(62px, 9999px, 69px, 0);
+  }
+  10% {
+    clip: rect(57px, 9999px, 30px, 0);
+  }
+  15% {
+    clip: rect(49px, 9999px, 91px, 0);
+  }
+  20% {
+    clip: rect(60px, 9999px, 7px, 0);
+  }
+  25% {
+    clip: rect(18px, 9999px, 50px, 0);
+  }
+  30% {
+    clip: rect(42px, 9999px, 88px, 0);
+  }
+  35% {
+    clip: rect(84px, 9999px, 92px, 0);
+  }
+  40% {
+    clip: rect(21px, 9999px, 23px, 0);
+  }
+  45% {
+    clip: rect(25px, 9999px, 51px, 0);
+  }
+  50% {
+    clip: rect(26px, 9999px, 1px, 0);
+  }
+  55% {
+    clip: rect(41px, 9999px, 77px, 0);
+  }
+  60% {
+    clip: rect(62px, 9999px, 83px, 0);
+  }
+  65% {
+    clip: rect(55px, 9999px, 23px, 0);
+  }
+  70% {
+    clip: rect(84px, 9999px, 45px, 0);
+  }
+  75% {
+    clip: rect(89px, 9999px, 13px, 0);
+  }
+  80% {
+    clip: rect(14px, 9999px, 18px, 0);
+  }
+  85% {
+    clip: rect(72px, 9999px, 22px, 0);
+  }
+  90% {
+    clip: rect(82px, 9999px, 91px, 0);
+  }
+  95% {
+    clip: rect(26px, 9999px, 89px, 0);
+  }
+  100% {
+    clip: rect(41px, 9999px, 22px, 0);
+  }
+}
